@@ -177,7 +177,6 @@ function startup(config) {
     }
   }, true);
 
-  console.log("Test");
   try {
     audioContext.destination.channelCountMode = "explicit";
     audioContext.destination.channelInterpretation = "speakers";
