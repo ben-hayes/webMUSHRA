@@ -6,6 +6,14 @@ This source code is protected by copyright law and international treaties. This 
 
 **************************************************************************/
 
+require 'aws/aws-autoloader.php';
+
+$s3 = new Aws\S3\S3Client([
+    'version'  => '2006-03-01',
+    'region'   => 'us-east-1',
+]);
+$bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
+
 
 
 function sanitize($string = '', $is_filename = FALSE)
@@ -86,6 +94,7 @@ if ($write_mushra) {
 		}
 	}
 	fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 // paired comparison
@@ -135,6 +144,7 @@ if ($write_pc) {
 		}
 	}
 	fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 // bs1116
@@ -180,6 +190,7 @@ if ($write_bs1116) {
 		}
 	}
 	fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 //lms
@@ -226,6 +237,7 @@ if($write_lms){
 		}
 	}
 	fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 
@@ -285,6 +297,7 @@ if($write_lss){
 		}
 	}
 	fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 //spatial
@@ -334,6 +347,7 @@ if ($write_spatial_localization) {
         }
     }
     fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 //asw
@@ -382,6 +396,7 @@ if ($write_spatial_asw) {
         }
     }
     fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 
@@ -431,6 +446,7 @@ if ($write_spatial_hwd) {
         }
     }
     fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 }
 
 //lev
@@ -478,6 +494,7 @@ if ($write_spatial_lev) {
         }
     }
     fclose($fp);
+	$upload = $s3->upload($bucket, $filename, fopen($filename, 'rb'), 'public-read');
 
 
 }
