@@ -203,64 +203,64 @@ pages:
         <p>
         When you would like to start, please click <em>Next</em>
         </p>
-    - 
-          - random
-          - type: mushra
-            id: vn_1
-            name: Multi-Stimulus Test
-            content: Please rate the quality of the conditions with respect to the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/nws/vn1/vn1_ref.wav
-            createAnchor35: true
-            createAnchor70: false
-            stimuli:
-                htp: configs/resources/audio/nws/vn1/vn1_htp.wav
-                ddsp_full: configs/resources/audio/nws/vn1/vn1_ddsp_full.wav
-                ddsp_tiny: configs/resources/audio/nws/vn1/vn1_ddsp_tiny.wav
-                nws: configs/resources/audio/nws/vn1/vn1_nws.wav
-                nws_fn: configs/resources/audio/nws/vn1/vn1_nws_fn.wav
-          - type: mushra
-            id: vn_2
-            name: Multi-Stimulus Test
-            content: Please rate the quality of the conditions with respect to the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/nws/vn2/vn2_ref.wav
-            createAnchor35: true
-            createAnchor70: false
-            stimuli:
-                htp: configs/resources/audio/nws/vn2/vn2_htp.wav
-                ddsp_full: configs/resources/audio/nws/vn2/vn2_ddsp_full.wav
-                ddsp_tiny: configs/resources/audio/nws/vn2/vn2_ddsp_tiny.wav
-                nws: configs/resources/audio/nws/vn2/vn2_nws.wav
-                nws_fn: configs/resources/audio/nws/vn2/vn2_nws_fn.wav
-          - type: mushra
-            id: tpt_1
-            name: Multi-Stimulus Test
-            content: Please rate the quality of the conditions with respect to the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
-            createAnchor35: true
-            createAnchor70: false
-            stimuli:
-                htp: configs/resources/audio/nws/tpt1/tpt1_htp.wav
-                ddsp_full: configs/resources/audio/nws/tpt1/tpt1_ddsp_full.wav
-                ddsp_tiny: configs/resources/audio/nws/tpt1/tpt1_ddsp_tiny.wav
-                nws: configs/resources/audio/nws/tpt1/tpt1_nws.wav
-                nws_fn: configs/resources/audio/nws/tpt1/tpt1_nws_fn.wav
-          - type: mushra
-            id: tpt_2
-            name: Multi-Stimulus Test
-            content: Please rate the quality of the conditions with respect to the reference.
-            enableLooping: true 
-            reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
-            createAnchor35: true
-            createAnchor70: false
-            stimuli:
-                htp: configs/resources/audio/nws/tpt2/tpt2_htp.wav
-                ddsp_full: configs/resources/audio/nws/tpt2/tpt2_ddsp_full.wav
-                ddsp_tiny: configs/resources/audio/nws/tpt2/tpt2_ddsp_tiny.wav
-                nws: configs/resources/audio/nws/tpt2/tpt2_nws.wav
-                nws_fn: configs/resources/audio/nws/tpt2/tpt2_nws_fn.wav
+    # - 
+    #       - random
+    #       - type: mushra
+    #         id: vn_1
+    #         name: Multi-Stimulus Test
+    #         content: Please rate the quality of the conditions with respect to the reference.
+    #         enableLooping: true 
+    #         reference: configs/resources/audio/nws/vn1/vn1_ref.wav
+    #         createAnchor35: true
+    #         createAnchor70: false
+    #         stimuli:
+    #             htp: configs/resources/audio/nws/vn1/vn1_htp.wav
+    #             ddsp_full: configs/resources/audio/nws/vn1/vn1_ddsp_full.wav
+    #             ddsp_tiny: configs/resources/audio/nws/vn1/vn1_ddsp_tiny.wav
+    #             nws: configs/resources/audio/nws/vn1/vn1_nws.wav
+    #             nws_fn: configs/resources/audio/nws/vn1/vn1_nws_fn.wav
+    #       - type: mushra
+    #         id: vn_2
+    #         name: Multi-Stimulus Test
+    #         content: Please rate the quality of the conditions with respect to the reference.
+    #         enableLooping: true 
+    #         reference: configs/resources/audio/nws/vn2/vn2_ref.wav
+    #         createAnchor35: true
+    #         createAnchor70: false
+    #         stimuli:
+    #             htp: configs/resources/audio/nws/vn2/vn2_htp.wav
+    #             ddsp_full: configs/resources/audio/nws/vn2/vn2_ddsp_full.wav
+    #             ddsp_tiny: configs/resources/audio/nws/vn2/vn2_ddsp_tiny.wav
+    #             nws: configs/resources/audio/nws/vn2/vn2_nws.wav
+    #             nws_fn: configs/resources/audio/nws/vn2/vn2_nws_fn.wav
+    #       - type: mushra
+    #         id: tpt_1
+    #         name: Multi-Stimulus Test
+    #         content: Please rate the quality of the conditions with respect to the reference.
+    #         enableLooping: true 
+    #         reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
+    #         createAnchor35: true
+    #         createAnchor70: false
+    #         stimuli:
+    #             htp: configs/resources/audio/nws/tpt1/tpt1_htp.wav
+    #             ddsp_full: configs/resources/audio/nws/tpt1/tpt1_ddsp_full.wav
+    #             ddsp_tiny: configs/resources/audio/nws/tpt1/tpt1_ddsp_tiny.wav
+    #             nws: configs/resources/audio/nws/tpt1/tpt1_nws.wav
+    #             nws_fn: configs/resources/audio/nws/tpt1/tpt1_nws_fn.wav
+    #       - type: mushra
+    #         id: tpt_2
+    #         name: Multi-Stimulus Test
+    #         content: Please rate the quality of the conditions with respect to the reference.
+    #         enableLooping: true 
+    #         reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
+    #         createAnchor35: true
+    #         createAnchor70: false
+    #         stimuli:
+    #             htp: configs/resources/audio/nws/tpt2/tpt2_htp.wav
+    #             ddsp_full: configs/resources/audio/nws/tpt2/tpt2_ddsp_full.wav
+    #             ddsp_tiny: configs/resources/audio/nws/tpt2/tpt2_ddsp_tiny.wav
+    #             nws: configs/resources/audio/nws/tpt2/tpt2_nws.wav
+    #             nws_fn: configs/resources/audio/nws/tpt2/tpt2_nws_fn.wav
     - type: finish
       name: Thank you
       content: >

@@ -6,11 +6,11 @@ This source code is protected by copyright law and international treaties. This 
 
 **************************************************************************/
 
-require(dirname(__FILE__).'./aws/aws-autoloader.php');
+require(dirname(__FILE__).'/aws/aws-autoloader.php');
 
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
-    'region'   => 'us-east-1',
+    'region'   => 'eu-west-2',
 ]);
 $bucket = getenv('S3_BUCKET')?: die('No "S3_BUCKET" config var in found in env!');
 
