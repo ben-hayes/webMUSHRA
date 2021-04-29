@@ -1,4 +1,4 @@
 FROM php:7.0-apache
 COPY ./ /var/www/html/
 
-CMD [ "./start-apache.sh" ]
+CMD [ "start-apache.sh" ]
