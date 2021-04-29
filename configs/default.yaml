@@ -1,5 +1,5 @@
-testname: webMUSHRA Example
-testId: default_example
+testname: NWS Listening Test
+testId: neural_waveshaping_synthesis
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
@@ -10,11 +10,180 @@ pages:
     - type: generic
       id: first_page
       name: Welcome
-      content: Welcome to webMUSHRA!       
+      content: >
+        <p><h4>Dear Participant</h4></p>
+
+        <p>Thank you for your interest in our study.
+        Please read the below information carefully before proceeding.</p>
+        <hr />
+        <div>
+        <div style="width: 65%; margin: auto; text-align: justify; text-justify: inter-word">
+
+        <h3>Study title</h3>
+        <p>Neural Waveshaping Synthesis Listening Test</p>
+
+        <h3>Researchers' names</h3>
+        <p>Ben Hayes, Charalampos Saitis, George Fazekas</p>
+
+        <h3>Study Information</h3>
+        <p>
+        You are being invited to participate in a research study.
+        Before you decide whether or not you wish to participate in this study,
+        it is important for you to understand why the research is being done and
+        what it will involve.
+        Please take time to read the following information carefully and discuss
+        it with others if you wish.
+        Ask us questions if there is anything that is not clear or if you would
+        like more information.
+        </p>
+
+        <h4>What is the purpose of the study and what would taking part involve?</h4>
+        <p>
+        This study consists of a listening test designed to compare some methods for
+        synthesising audio.
+        You will hear a number of audio clips and will be asked to rate their quality
+        relative to a reference.
+        Before commencing, you will also perform a small screening task to test your
+        audio setup.
+        Finally, you will complete a brief questionnaire.
+        The study will take ten to fifteen minutes to complete,
+        and takes place completely within your web browser.
+        </p>
+
+        <h4>Why am I being invited?</h4>
+        <p>
+        You are being invited to participate in this resesarch study because you have
+        prior experience working with audio or musical sound.
+        </p>
+
+        <h4>Do I have to take part?</h4>
+        <p>
+        This information sheet has been written to help you decide if you would
+        like to take part.
+        It is up to you whether you wish to do so.
+        If you do decide to take part, you will be free to withdraw at any time without
+        needing to provide a reason and with no penalties or detrimental effects.
+        </p>
+
+        <h4>What are the possible benefits of taking part?</h4>
+        Your responses in this study can help guide the development of new tools for audio
+        synthesis.
+
+        <h4>What are the possible disadvantages and risks of taking part?</h4>
+        This study poses no particular disadvantages or risks.
+
+        <h4>Expenses and payments</h4>
+        No payment will be made for participation in this study.
+
+        <h4>What information about me will you be collecting?</h4>
+        <p>
+        Only your responses to the tasks and information given in the questionnaire
+        are recorded, and no personally identifying information is collected.
+        </p>
+
+        <h4>How will my data be stored and who will have access to it?</h4>
+        <p>
+        All collected data will be stored in a fully anonymised format, and 
+        only researchers listed in this document will have access to it.
+        </p>
+
+        <h4>When and how will my data be destroyed?</h4>
+        <p>
+        Collected data will be destroyed by deletion from the relevant digital storage.
+        This will take place once the results of the study have been submitted for
+        publication.
+        </p>
+
+        <h4>How will my data be used and shared?</h4>
+        <p>
+        The collected data will be analysed and the findings of this analysis will
+        be submitted for publication in peer reviewed journals or conferences.
+        </p>
+
+        <h4>Under what legal basis are you collecting this information?</h4>
+        <p>
+        Queen Mary University of London processes personal data for research purposes
+        in accordance with the lawful basis of ‘public task’.
+        </p>
+
+        <p>
+        Please read <a href="http://www.arcs.qmul.ac.uk/media/arcs/policyzone/Privacy-Notice-for-Research-Participants.pdf">Queen Mary’s privacy notice for research participants</a>
+        containing important information about your personal data and your
+        rights in this respect.
+        If you have any questions relating to data protection,
+        please contact Queen Mary’s Data Protection Officer,
+        Queens’ Building, Mile End Road, London, E1 4NS 
+        or <a href="mailto:data-protection@qmul.ac.uk">data-protection@qmul.ac.uk</a> or 020 7882 7596.
+        </p>
+
+        <h4>What will happen if I want to withdraw from this study?</h4>
+        <p>
+        You can withdraw your participation in the study at any time without
+        providing a reason.
+        <p>
+
+        <p>
+        Any data collected prior to your withdrawal will be confidentially destroyed
+        and not included in any analysis.
+        <p>
+
+        <h4>What should I do if I have any concerns about this study?</h4>
+        <p>
+        If you have any concerns about the manner in which the study was conducted,
+        in the first instance, please contact the researcher(s) responsible for the
+        study.
+        If you have a complaint which you feel you cannot discuss with the researchers
+        thten you should contact the Research Ethics Facilitators by email:
+        <a href="mailto:research-ethics@qmul.ac.uk">research-ethics@qmul.ac.uk</a>.
+        When contacting the Research Ethics Facilitators, please provide details of the
+        study title, description of the study and QMERC reference number 
+        (where possible), the researcher(s) involved, and details of the complaint you 
+        wish to make. 
+        </p>
+
+        <h4>Who can I contact if I have any questions about this study?</h4>
+        <p>
+        Dr Charalampos Saitis<br />
+        <a href="mailto:c.saitis@qmul.ac.uk">c.saitis@qmul.ac.uk</a><br />
+        +44(0)20 7882 7518
+        </p>
+
+        <hr />
+
+        <p>
+        When you are ready to continue, please click the button below.
+        </p>
+
+        </div>
+        </div>
     - type: mushra
       id: trial1
       name: MUSHRA
-      content: This training shows how to use our user interface. Please perform the underlined instructions to proceed with the training session. Reminder: In a MUSHRA listening test you are asked to rate the Basic Audio Quality (BAQ) of each condition.<br/>Basic Audio Quality is a single and global attribute that is used to judge any and all detected differences between the reference and the condition.
+      content: >
+        <p>
+        This training shows how to use our user interface.
+        </p>
+        <p>
+        Please follow the below instructions to familiarise yourself with the interface.
+        </p>
+        <p>
+        In this listening test, you are asked to rate the quality of each condition with respect to a reference.<br />
+        To do so, first turn down your listening volume and start the reference playing by clicking the <em>Play</em> buton below
+        the word <em>Reference</em>.<br />
+        Now, adjust the volume until it is at a comfortable level.
+        You can pause playback by clicking the button again, and pick up where you left off by clicking once more.<br />
+        You can use the sliders below the waveform display to loop particular segments of the audio.<br />
+        If you want to stop playback completely, you can use the stop button to the left of the screen.
+        </p>
+        <p>
+        Now that you are familiar with the controls, try listening to the audio for the first condition by clicking the
+        <em>Play</em> button below the text <em>Cond. 1</em>.<br />
+        Then, use the slider below the button to rate the quality of the audio in terms of differences from the reference.<br />
+        Try listening to and rating all the conditions this way, listening back to the reference as often as you need.<br />
+        </p>
+        <p>
+        Once you are done, click <em>Next</em> to continue.
+        </p>
       showWaveform: true
       enableLooping: true 
       reference: configs/resources/audio/mono_ref.wav
@@ -24,40 +193,84 @@ pages:
           C1: configs/resources/audio/mono_c1.wav
           C2: configs/resources/audio/mono_c2.wav
           C3: configs/resources/audio/mono_c3.wav
+    - type: generic
+      id: pre_study
+      name: Ready
+      content: >
+        <p>
+        You are now ready to begin the listening test.
+        </p>
+        <p>
+        When you would like to start, please click <em>Next</em>
+        </p>
     - 
           - random
           - type: mushra
-            id: trial_random_1
-            name: MUSHRA - Random 2
-            content: Due to randomization, this page will be either the second MUSHRA page or the third MUSHRA page.
+            id: vn_1
+            name: Multi-Stimulus Test
+            content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/mono_ref.wav
-            createAnchor35: false
+            reference: configs/resources/audio/nws/vn1/vn1_ref.wav
+            createAnchor35: true
             createAnchor70: false
             stimuli:
-                C1: configs/resources/audio/mono_c1.wav
-                C2: configs/resources/audio/mono_c2.wav
-                C3: configs/resources/audio/mono_c3.wav          
+                htp: configs/resources/audio/nws/vn1/vn1_htp.wav
+                ddsp_full: configs/resources/audio/nws/vn1/vn1_ddsp_full.wav
+                ddsp_tiny: configs/resources/audio/nws/vn1/vn1_ddsp_tiny.wav
+                nws: configs/resources/audio/nws/vn1/vn1_nws.wav
+                nws_fn: configs/resources/audio/nws/vn1/vn1_nws_fn.wav
           - type: mushra
-            id: trial_random_2
-            name: MUSHRA - Random 1
-            content: Due to randomization, this page will be either the second MUSHRA page or the third MUSHRA page.
+            id: vn_2
+            name: Multi-Stimulus Test
+            content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/mono_ref.wav
-            createAnchor35: false
+            reference: configs/resources/audio/nws/vn2/vn2_ref.wav
+            createAnchor35: true
             createAnchor70: false
             stimuli:
-                C1: configs/resources/audio/mono_c1.wav
-                C2: configs/resources/audio/mono_c2.wav
-                C3: configs/resources/audio/mono_c3.wav          
+                htp: configs/resources/audio/nws/vn2/vn2_htp.wav
+                ddsp_full: configs/resources/audio/nws/vn2/vn2_ddsp_full.wav
+                ddsp_tiny: configs/resources/audio/nws/vn2/vn2_ddsp_tiny.wav
+                nws: configs/resources/audio/nws/vn2/vn2_nws.wav
+                nws_fn: configs/resources/audio/nws/vn2/vn2_nws_fn.wav
+          - type: mushra
+            id: tpt_1
+            name: Multi-Stimulus Test
+            content: Please rate the quality of the conditions with respect to the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
+            createAnchor35: true
+            createAnchor70: false
+            stimuli:
+                htp: configs/resources/audio/nws/tpt1/tpt1_htp.wav
+                ddsp_full: configs/resources/audio/nws/tpt1/tpt1_ddsp_full.wav
+                ddsp_tiny: configs/resources/audio/nws/tpt1/tpt1_ddsp_tiny.wav
+                nws: configs/resources/audio/nws/tpt1/tpt1_nws.wav
+                nws_fn: configs/resources/audio/nws/tpt1/tpt1_nws_fn.wav
+          - type: mushra
+            id: tpt_2
+            name: Multi-Stimulus Test
+            content: Please rate the quality of the conditions with respect to the reference.
+            enableLooping: true 
+            reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
+            createAnchor35: true
+            createAnchor70: false
+            stimuli:
+                htp: configs/resources/audio/nws/tpt2/tpt2_htp.wav
+                ddsp_full: configs/resources/audio/nws/tpt2/tpt2_ddsp_full.wav
+                ddsp_tiny: configs/resources/audio/nws/tpt2/tpt2_ddsp_tiny.wav
+                nws: configs/resources/audio/nws/tpt2/tpt2_nws.wav
+                nws_fn: configs/resources/audio/nws/tpt2/tpt2_nws_fn.wav
     - type: finish
       name: Thank you
-      content: Thank you for attending!
-      showResults: true
+      content: >
+        <p>Thank you for your participation!</p>
+        <p>In order to save your results, please answer the following questions.</p>
+      showResults: false
       writeResults: true
       questionnaire:
           - type: text
-            label: eMail
+            label: Email Address
             name: email
           - type: number
             label: Age
@@ -73,5 +286,35 @@ pages:
                label: Female
              - value: male
                label: Male
+             - value: nonbinary
+               label: Non-binary
              - value: other
                label: Other
+          - type: likert
+            name: audio_exp
+            label: How would you rate your experience with audio?
+            response:
+             - value: no_experience
+               label: No experience
+             - value: amateur
+               label: Amateur
+             - value: serious_amateur
+               label: Serious Amateur
+             - value: professional
+               label: Professional
+          - type: likert
+            name: music_exp
+            label: Which title best describes you?
+            response:
+             - value: nonmusician
+               label: Nonmusician
+             - value: music_loving_nonmusician
+               label: Music Loving Nonmusician
+             - value: amateur_musician
+               label: Amateur Musician
+             - value: serious_amateur_musician
+               label: Serious Amateur Musician
+             - value: semi_professional_musician
+               label: Semi-professional Musician
+             - value: professional_musician
+               label: Professional Musician
