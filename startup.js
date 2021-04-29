@@ -177,9 +177,10 @@ function startup(config) {
     }
   }, true);
 
+  console.log("Test");
   try {
     audioContext.destination.channelCountMode = "explicit";
-    audioContext.destination.channelInterpretation = "discrete";
+    audioContext.destination.channelInterpretation = "speakers";
     audioContext.destination.channelCount = audioContext.destination.maxChannelCount;
   } catch (e) {
     console.log("webMUSHRA: Could not set channel count of destination node.");
