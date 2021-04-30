@@ -8,6 +8,8 @@ This source code is protected by copyright law and international treaties. This 
 
 require(dirname(__FILE__).'/aws/aws-autoloader.php');
 
+use Aws\S3\Exception\S3Exception as S3Exception;
+
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
     'region'   => 'eu-west-2',
@@ -84,6 +86,13 @@ array_push($mushraCsvData, $input);
 		
 if ($write_mushra) {
 	$filename = $filepathPrefix."mushra".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
 	$isFile = is_file($filename);
 	$fp = fopen($filename, 'a');
 	foreach ($mushraCsvData as $row) {
@@ -134,6 +143,13 @@ foreach ($session->trials as $trial) {
 
 if ($write_pc) {
 	$filename = $filepathPrefix."paired_comparison".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
 	$isFile = is_file($filename);
 	$fp = fopen($filename, 'a');
 	foreach ($pcCsvData as $row) {
@@ -180,6 +196,13 @@ foreach ($session->trials as $trial) {
 
 if ($write_bs1116) {
 	$filename = $filepathPrefix."bs1116".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
 	$isFile = is_file($filename);
 	$fp = fopen($filename, 'a');
 	foreach ($bs1116CsvData as $row) {
@@ -227,6 +250,13 @@ foreach($session->trials as $trial) {
 
 if($write_lms){
 	$filename = $filepathPrefix."lms".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
 	$isFile = is_file($filename); 
 	$fp = fopen($filename, 'a');
 	foreach($lmsCSVdata as $row){
@@ -287,6 +317,13 @@ foreach($session->trials as $trial) {
 
 if($write_lss){
 	$filename = $filepathPrefix."lss".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
 	$isFile = is_file($filename); 
 	$fp = fopen($filename, 'a');
 	foreach($lssCSVdata as $row){
@@ -337,6 +374,13 @@ array_push($results, $trial->id, $response->name, $response->stimulus, $response
 if ($write_spatial_localization) {
     
     $filename = $filepathPrefix."spatial_localization".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
     $isFile = is_file($filename);
     $fp = fopen($filename, 'a');
     foreach ($spatial_localizationData as $row) {
@@ -386,6 +430,13 @@ foreach ($session->trials as $trial) {
 if ($write_spatial_asw) {
 
     $filename = $filepathPrefix."spatial_asw".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
     $isFile = is_file($filename);
     $fp = fopen($filename, 'a');
     foreach ($spatial_aswData as $row) {
@@ -436,6 +487,13 @@ foreach ($session->trials as $trial) {
 if ($write_spatial_hwd) {
     
     $filename = $filepathPrefix."spatial_hwd".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
     $isFile = is_file($filename);
     $fp = fopen($filename, 'a');
     foreach ($spatial_hwdData as $row) {
@@ -484,6 +542,13 @@ foreach ($session->trials as $trial) {
 
 if ($write_spatial_lev) {
     $filename = $filepathPrefix."spatial_lev".$filepathPostfix;
+	if ($s3->doesObjectExist($bucket, $filename)) {
+		$s3_file = $s3->getObject([
+			'Bucket' => $bucket,
+			'Key' => $filename,
+			'SaveAs' => $filename
+		]);
+	}
     $isFile = is_file($filename);
     $fp = fopen($filename, 'a');
     foreach ($spatial_levData as $row) {

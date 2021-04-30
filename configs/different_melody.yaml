@@ -1,5 +1,5 @@
 testname: NWS Listening Test
-testId: neural_waveshaping_synthesis
+testId: neural_waveshaping_synthesis_different_melody
 bufferSize: 2048
 stopOnErrors: true
 showButtonPreviousPage: true
@@ -213,10 +213,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/vn1/vn1_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/vn2/vn2_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/vn1/vn1_htp.wav
                 ddsp_full: configs/resources/audio/nws/vn1/vn1_ddsp_full.wav
@@ -228,10 +230,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/vn2/vn2_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/vn1/vn1_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/vn2/vn2_htp.wav
                 ddsp_full: configs/resources/audio/nws/vn2/vn2_ddsp_full.wav
@@ -243,10 +247,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/tpt1/tpt1_htp.wav
                 ddsp_full: configs/resources/audio/nws/tpt1/tpt1_ddsp_full.wav
@@ -258,10 +264,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/tpt2/tpt2_htp.wav
                 ddsp_full: configs/resources/audio/nws/tpt2/tpt2_ddsp_full.wav
@@ -273,10 +281,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/fl1/fl1_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/fl2/fl2_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/fl1/fl1_htp.wav
                 ddsp_full: configs/resources/audio/nws/fl1/fl1_ddsp_full.wav
@@ -288,10 +298,12 @@ pages:
             name: Multi-Stimulus Test
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
-            reference: configs/resources/audio/nws/fl2/fl2_ref.wav
-            createAnchor35: true
+            reference: configs/resources/audio/nws/fl1/fl1_ref.wav
+            createAnchor35: false
             createAnchor70: false
+            showWaveform: false
             randomize: true
+            includeReference: false
             stimuli:
                 htp: configs/resources/audio/nws/fl2/fl2_htp.wav
                 ddsp_full: configs/resources/audio/nws/fl2/fl2_ddsp_full.wav
