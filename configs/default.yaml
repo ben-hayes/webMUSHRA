@@ -2,7 +2,7 @@ testname: NWS Listening Test
 testId: neural_waveshaping_synthesis
 bufferSize: 2048
 stopOnErrors: true
-showButtonPreviousPage: true
+showButtonPreviousPage: false
 remoteService: service/write.php
 
 
@@ -156,6 +156,31 @@ pages:
 
         </div>
         </div>
+    - type: generic
+      id: consent
+      name: Consent Form
+      content: >
+        <p>Should you wish to participate in the study, please consider the following statements.
+        By clicking <em>Next</em> you confirm that you are willing to participate in this research.
+        However, you are reminded that you are free to withdraw your participation at any time.</p>
+        <hr />
+        <div>
+        <div style="width: 65%; margin: auto; text-align: justify; text-justify: inter-word">
+        <p>I confirm that I have read the information on the previous page, or it has been read to me. I have had the opportunity to consider the information, ask questions and have had these answered satisfactorily.</p>
+        <p>I understand that my participation is voluntary and that I am free to stop taking part in the study at any time without giving any reason and without my rights being affected.</p>
+        <p>I understand that my data will be accessed by the research team</p>
+        <p>I understand that my data will be securely stored in an anonymised format and in accordance with the data protection guidelines of the Queen Mary University of London</p>
+        <p>I understand that I can access the information I have provided and request destruction of that information at any time prior to publication. I understand that following publication I will not be able to request withdrawal of the information I have provided</p>
+        <p>I understand that the researcher will not identify me in any publications and other study outputs using personal information obtained from this study</p>
+        <p>I understand that the information collected about me will be used to support other research in the future, and it may be shared in anonymised form with other researchers</p>
+        <p>I agree to take part in the above study</p>
+        </div>
+        </div>
+        <hr />
+
+        <p>
+        When you are ready to continue, please click the button below.
+        </p>
     - type: headphone_check
       id: hc
       name: Headphone Check
@@ -190,8 +215,10 @@ pages:
       showWaveform: true
       enableLooping: true 
       reference: configs/resources/audio/mono_ref.wav
-      createAnchor35: true
-      createAnchor70: true
+      createAnchor1k: true
+      createAnchor35: false
+      createAnchor70: false
+      includeReference: true
       stimuli:
           C1: configs/resources/audio/mono_c1.wav
           C2: configs/resources/audio/mono_c2.wav
@@ -204,6 +231,9 @@ pages:
         You are now ready to begin the listening test.
         </p>
         <p>
+        On the following screens, the references and conditions will be short musical clips. Your task is to rate the quality of the conditions with respect to the reference.
+        </p>
+        <p>
         When you would like to start, please click <em>Next</em>
         </p>
     - 
@@ -214,9 +244,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/vn1/vn1_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/vn1/vn1_htp.wav
                 ddsp_full: configs/resources/audio/nws/vn1/vn1_ddsp_full.wav
@@ -229,9 +261,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/vn2/vn2_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/vn2/vn2_htp.wav
                 ddsp_full: configs/resources/audio/nws/vn2/vn2_ddsp_full.wav
@@ -244,9 +278,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/tpt1/tpt1_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/tpt1/tpt1_htp.wav
                 ddsp_full: configs/resources/audio/nws/tpt1/tpt1_ddsp_full.wav
@@ -259,9 +295,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/tpt2/tpt2_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/tpt2/tpt2_htp.wav
                 ddsp_full: configs/resources/audio/nws/tpt2/tpt2_ddsp_full.wav
@@ -274,9 +312,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/fl1/fl1_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/fl1/fl1_htp.wav
                 ddsp_full: configs/resources/audio/nws/fl1/fl1_ddsp_full.wav
@@ -289,9 +329,11 @@ pages:
             content: Please rate the quality of the conditions with respect to the reference.
             enableLooping: true 
             reference: configs/resources/audio/nws/fl2/fl2_ref.wav
-            createAnchor35: true
+            createAnchor1k: true
+            createAnchor35: false
             createAnchor70: false
             randomize: true
+            includeReference: true
             stimuli:
                 htp: configs/resources/audio/nws/fl2/fl2_htp.wav
                 ddsp_full: configs/resources/audio/nws/fl2/fl2_ddsp_full.wav
@@ -305,37 +347,46 @@ pages:
         <p>In order to save your results, please answer the following questions.</p>
       showResults: false
       writeResults: true
+      popupContent: >
+        <p>Your responses have been recorded.</p>
+        <p>Do you have 5 more minutes?</p>
+        <p>We would like to invite you to provide a few more ratings to help us design better listening tests in the future.</p>
+        <p>If you would like to participate, please <a href="/?config=different_melody.yaml" target="_blank">follow this link</a>.</p>
       questionnaire:
-          - type: number
+          - type: likert
             label: Age
             name: age
-            min: 0
-            max: 100
-            default: 30
+            response:
+              - value: 18
+                label: 18 - 29
+              - value: 30
+                label: 30 - 40
+              - value: 40
+                label: 40 - 50
+              - value: 50
+                label: 50 - 60
+              - value: 60
+                label: 60 - 70
+              - value: 70
+                label: 70+
           - type: likert
             name: gender
-            label: Gender
+            label: What is your gender?
             response:
-             - value: female
-               label: Female
-             - value: male
-               label: Male
+             - value: woman
+               label: Woman
+             - value: man
+               label: Man
              - value: nonbinary
                label: Non-binary
-             - value: other
-               label: Other
-          - type: likert
-            name: audio_exp
-            label: How would you rate your experience with audio?
-            response:
-             - value: no_experience
-               label: No experience
-             - value: amateur
-               label: Amateur
-             - value: serious_amateur
-               label: Serious Amateur
-             - value: professional
-               label: Professional
+             - value: undisclosed
+               label: Prefer not to disclose
+             - value: self-described
+               label: Prefer to self describe
+          - type: text
+            name: self-described-gender
+            label: If you prefer to self-describe, please do so
+            optional: true
           - type: likert
             name: music_exp
             label: Which title best describes you?
@@ -352,3 +403,17 @@ pages:
                label: Semi-professional Musician
              - value: professional_musician
                label: Professional Musician
+          - type: likert
+            name: audio_exp
+            label: Which title best describes your experience with music or audio production?
+            response:
+             - value: no_experience
+               label: No experience
+             - value: amateur
+               label: Amateur
+             - value: serious_amateur
+               label: Serious Amateur
+             - value: semi-professional
+               label: Semi-professional
+             - value: professional
+               label: Professional

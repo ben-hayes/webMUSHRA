@@ -7,7 +7,7 @@ services:
     volumes:
       - ./results:/var/www/html/results
       - ./configs:/var/www/html/configs
-      # - ./:/var/www/html
+      - ./:/var/www/html
     ports:
       - "8000:80"
     environment:
